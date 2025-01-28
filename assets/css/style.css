@@ -6,6 +6,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --spo-main: #141922;
+  --spo-main-darker: #080b12;
+  --spo-dark: #000000;
+  --spo-secondary: #282828;
+  --spo-light: #a3a3a3;
+  --spo-lighter: #d2d2d2;
+  --spo-white: #ffffff;
+  --spo-accent: #adff2f;
+}
+
+img {
+  width: 100%;
+}
+
 /* #endregion common rules */
 
 .debug {
@@ -19,33 +34,79 @@
     .main_container {
       border: 1px dashed black;
       background-color: darkcyan;
+      .main_content {
+        min-height: calc(100vh -90px);
+      }
     }
   }
   .lower {
     border: 1px dashed black;
-    background-color: red;
+    background-color: var(--spo-secondary);
   }
 }
 
 body {
+  font-family: "Montserrat", serif;
+  color: var(--spo-white);
   .upper {
     display: flex;
     width: 100%;
     height: calc(100vh - 90px);
     .sidebar_container {
-      width: 50px;
+      background-color: var(--spo-dark);
+      min-width: 50px;
+      max-width: 50px;
       .sidebar {
         display: flex;
         flex-direction: column;
         row-gap: 1rem;
+        li {
+          text-align: center;
+          #site_logo {
+            color: var(--spo-lighter);
+            margin-top: 0.2rem;
+            filter: brightness(100%);
+          }
+          img {
+            filter: brightness(80%);
+            width: 70%;
+          }
+        }
       }
     }
     .main_container {
       overflow-y: auto;
-      padding-left: 1rem;
+      width: 100%;
+      .main_banner {
+        height: 90px;
+        background-color: var(--spo-main-darker);
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        #banner_container {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          #banner_msg {
+            font-size: 0.6;
+            position: absolute;
+            top: 45%;
+            left: 48%;
+            transform: translateY(-50%);
+            padding: 1rem 2.5rem;
+            border: 1.5px solid;
+            border-radius: 25px;
+          }
+        }
+      }
+      .main_content {
+        background-color: var(--spo-main);
+        height: calc(100vh - 180px);
+      }
     }
   }
   .lower {
     height: 90px;
+    background-color: var(--spo-secondary);
   }
 }
