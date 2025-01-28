@@ -6,18 +6,15 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 552px;
-}
-
 /* #endregion common rules */
 
 .debug {
   color: gray;
   .upper {
-    display: inline-block;
+    width: 100%;
     .sidebar_container {
-      width: 50px;
+      display: inline-block;
+      width: 20%;
       height: calc(100vh - 90px);
       background-color: black;
       .sidebar {
@@ -30,7 +27,7 @@ body {
       display: inline-block;
       height: calc(100vh - 90px);
       overflow-y: auto;
-      width: 540px;
+      width: 60%;
     }
   }
   .lower {
