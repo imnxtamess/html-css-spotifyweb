@@ -6,4 +6,35 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 552px;
+}
+
 /* #endregion common rules */
+
+.debug {
+  color: gray;
+  .upper {
+    display: inline-block;
+    .sidebar_container {
+      width: 50px;
+      height: calc(100vh - 90px);
+      background-color: black;
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+    }
+    .main_container {
+      display: inline-block;
+      height: calc(100vh - 90px);
+      overflow-y: auto;
+      width: 540px;
+    }
+  }
+  .lower {
+    height: 90px;
+    background-color: darkgray;
+  }
+}
