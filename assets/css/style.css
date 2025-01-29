@@ -477,7 +477,7 @@ body {
   /* MAIN CONTAINER END*/
 
   .lower {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 0.8rem;
     font-size: 0.8rem;
     height: 90px;
@@ -493,9 +493,18 @@ body {
         flex-direction: column;
       }
       .song_fav {
+        margin-left: 0.5rem;
         flex-direction: column;
         filter: brightness(60%);
         row-gap: 0.3rem;
+      }
+      @media screen and (min-width: 878px) {
+        .song_fav {
+          flex-direction: row;
+          gap: 1rem;
+          margin-left: 2rem;
+          margin-right: -1.5rem;
+        }
       }
     }
     .lower_middle {
@@ -504,6 +513,8 @@ body {
       padding-left: 2.5rem;
       flex-direction: column;
       .middle_top {
+        justify-content: space-around;
+        width: 100%;
         font-size: 1.2rem;
         column-gap: 1rem;
         align-items: center;
@@ -516,6 +527,7 @@ body {
       }
     }
     .lower_right {
+      justify-content: space-around;
       align-items: center;
       column-gap: 1rem;
     }
