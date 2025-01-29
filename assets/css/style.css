@@ -82,12 +82,19 @@ section {
   -webkit-appearance: none;
   appearance: none;
   /* creating a custom design */
-  height: 4px;
-  width: 4px;
-  background-color: transparent;
+  height: 15px;
+  width: 15px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--spo-lighter);
   border-radius: 50%;
   /*  slider progress trick  */
   box-shadow: -407px 0 0 400px var(--spo-lighter);
+}
+
+.minute_bar::-webkit-slider-thumb:hover,
+.volume_bar::-webkit-slider-thumb:hover {
+  background-color: var(--spo-white);
+  box-shadow: -407px 0 0 400px var(--spo-accent);
 }
 
 /* Thumb: Firefox */
@@ -141,9 +148,10 @@ section {
   -webkit-appearance: none;
   appearance: none;
   /* creating a custom design */
-  height: 4px;
-  width: 4px;
-  background-color: transparent;
+  height: 15px;
+  width: 15px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--spo-lighter);
   border-radius: 50%;
   /*  slider progress trick  */
   box-shadow: -407px 0 0 400px var(--spo-lighter);
