@@ -38,17 +38,20 @@
               />
             </a>
           </li>
-          <li>
-            <a href=""><img src="./assets/media/img/home.svg" alt="" /></a>
-            <span class="hide">Home</span>
+          <li class="hover_bright">
+            <a href="">
+              <img src="./assets/media/img/home.svg" alt="" />
+              <span class="hide">Home</span>
+            </a>
+            
           </li>
-          <li>
+          <li class="hover_bright">
             <a href="">
               <img src="./assets/media/img/search.svg" alt="" />
               <span class="hide">Cerca</span>
             </a>
           </li>
-          <li>
+          <li class="hover_bright">
             <a href="">
               <img src="./assets/media/img/libreria.svg" alt="" />
               <span class="hide">La tua libreria</span>
@@ -91,7 +94,7 @@
         <!-- TOP SIDEBAR END -->
         <ul class="bot_sidebar">
           <li>
-            <a id="dl_items" href="">
+            <a class="hover_bright" id="dl_items" href="">
               <img id="dl_icon" src="./assets/media/img/download.svg" alt="" />
               <span class="hide">Installa app</span>
             </a>
@@ -113,22 +116,22 @@
         <div class="main_content">
           <div class="d-flex categories">
             <div>
-              <a href="">in evidenza</a>
+              <a class="hover_bright" href="">in evidenza</a>
             </div>
             <div>
-              <a href="">podcast</a>
+              <a class="hover_bright" href="">podcast</a>
             </div>
             <div>
-              <a href="">classifiche</a>
+              <a class="hover_bright" href="">classifiche</a>
             </div>
             <div>
-              <a href="">generi e mood</a>
+              <a class="hover_bright" href="">generi e mood</a>
             </div>
             <div>
-              <a href="">nuove uscite</a>
+              <a class="hover_bright" href="">nuove uscite</a>
             </div>
             <div>
-              <a href="">scopri</a>
+              <a class="hover_bright" href="">scopri</a>
             </div>
           </div>
           <section>
@@ -264,15 +267,17 @@
           </a>  
         </div>
         <div class="song_fav d-flex">
-          <div><i class="fa-regular fa-heart"></i></div>
-          <div><i class="fa-regular fa-folder"></i></div>
+          <a class="hover_bright" href=""><i class="fa-regular fa-heart"></i></a>
+          <a class="hover_bright" href=""><i class="fa-regular fa-folder"></i></a>
         </div>
       </div>
       <div class="lower_middle d-flex">
         <div class="middle_top d-flex">
           <a href=""><i class="fa-solid fa-shuffle"></i></a>
           <a href=""><i class="fa-solid fa-backward-step"></i></a>
-          <a class="play_button" href=""><i class="fa-regular fa-circle-play"></i></a>
+          <div class="play_button_container d-flex">
+            <a class="play_button" href=""><i class="fa-regular fa-circle-play"></i></a>
+          </div>
           <a href=""><i class="fa-solid fa-forward-step"></i></a>
           <a href=""><i class="fa-solid fa-rotate-right"></i></a>
         </div>
