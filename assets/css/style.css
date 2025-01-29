@@ -477,7 +477,7 @@ body {
   /* MAIN CONTAINER END*/
 
   .lower {
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 0.8rem;
     font-size: 0.8rem;
     height: 90px;
@@ -498,7 +498,15 @@ body {
         filter: brightness(60%);
         row-gap: 0.3rem;
       }
+      @media screen and (min-width: 640px) {
+          img{
+            width: 38px;
+          }
+        }
       @media screen and (min-width: 878px) {
+        img{
+          width: 42px;
+        }
         .song_fav {
           flex-direction: row;
           gap: 1rem;
@@ -506,6 +514,9 @@ body {
           margin-right: -1.5rem;
         }
       }
+        
+
+    }
     }
     .lower_middle {
       align-items: center;
