@@ -569,37 +569,38 @@ body {
         }
       }
     }
-  }
-  .lower_middle {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 1rem;
-    .middle_top {
-      justify-content: space-around;
-      width: 100%;
-      font-size: 1.2rem;
-      column-gap: 1rem;
+
+    .lower_middle {
       align-items: center;
-      .play_button_container {
-        height: 2.5rem;
-        flex-basis: 2.6rem;
-        justify-content: center;
-        .play_button {
-          font-size: 2rem;
-        }
-        .play_button:hover {
-          font-size: 2.5rem;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 1rem;
+      .middle_top {
+        justify-content: space-around;
+        width: 100%;
+        font-size: 1.2rem;
+        column-gap: 1rem;
+        align-items: center;
+        .play_button_container {
+          height: 2.5rem;
+          flex-basis: 2.6rem;
+          justify-content: center;
+          .play_button {
+            font-size: 2rem;
+          }
+          .play_button:hover {
+            font-size: 2.5rem;
+          }
         }
       }
+      .middle_bottom {
+        align-items: center;
+      }
     }
-    .middle_bottom {
+    .lower_right {
+      justify-content: space-around;
       align-items: center;
+      column-gap: 1rem;
     }
-  }
-  .lower_right {
-    justify-content: space-around;
-    align-items: center;
-    column-gap: 1rem;
   }
 }
