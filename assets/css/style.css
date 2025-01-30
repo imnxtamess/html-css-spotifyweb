@@ -35,14 +35,6 @@ section {
   padding: 1rem;
 }
 
-.category_container {
-  border-bottom: 1px solid var(--spo-main);
-}
-
-.category_container:hover {
-  border-bottom: 1px solid var(--spo-accent);
-}
-
 /* #endregion common rules */
 
 /* #region utilities*/
@@ -196,8 +188,8 @@ section {
 
 /* #region hover effects */
 
-.minute_bar::-webkit-slider-thumb:hover,
-.volume_bar::-webkit-slider-thumb:hover {
+.wrapper:hover > .minute_bar::-webkit-slider-thumb,
+.wrapper:hover > .volume_bar::-webkit-slider-thumb {
   background-color: var(--spo-white);
   box-shadow: -407px 0 0 400px var(--spo-accent);
 }
@@ -213,6 +205,77 @@ section {
 
 .hide:hover {
   filter: brightness(200%);
+}
+
+.category_container {
+  position: relative;
+}
+
+#evidenza,
+#podcast,
+#classifiche,
+#mood,
+#last,
+#scopri {
+  height: 2rem;
+  width: 2rem;
+  border-bottom: 2px solid var(--spo-accent);
+  border-radius: 1px;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+}
+
+#home,
+#search,
+#library {
+  height: 2rem;
+  width: 4rem;
+  border-left: 4px solid var(--spo-accent);
+  border-radius: 1px;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  top: 42%;
+  left: 20%;
+  z-index: 10;
+  display: none;
+}
+
+#library {
+  left: 12%;
+}
+
+#home:target,
+#search:target,
+#library:target,
+#evidenza:target,
+#podcast:target,
+#classifiche:target,
+#mood:target,
+#last:target,
+#scopri:target {
+  display: block;
+}
+
+.sidebar_icons_container {
+  position: relative;
+}
+
+.col-6 {
+  position: relative;
+}
+
+.music_card:hover > img {
+  opacity: 0.3;
+}
+
+.hover_play {
+  position: absolute;
+  top: 25%;
+  font-size: 4rem;
 }
 
 /* #endregion hover effects */
@@ -425,15 +488,19 @@ body {
             padding: 1rem 0;
           }
         }
-        .music_card {
+        .music_card_container {
           flex-direction: column;
           align-items: center;
-          img {
-            padding-bottom: 0.5rem;
-          }
-          strong,
-          div {
-            padding-top: 0.5rem;
+          .music_card {
+            flex-direction: column;
+            align-items: center;
+            img {
+              padding-bottom: 0.5rem;
+            }
+            strong,
+            div {
+              padding-top: 0.5rem;
+            }
           }
         }
 

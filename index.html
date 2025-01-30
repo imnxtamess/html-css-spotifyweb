@@ -38,21 +38,24 @@
               />
             </a>
           </li>
-          <li class="hover_bright">
-            <a href="">
-              <img src="./assets/media/img/home.svg" alt="" />
+          <li class="hover_bright sidebar_icons_container">
+            <a href="#home">
+              <img id src="./assets/media/img/home.svg" alt="" />
               <span class="hide">Home</span>
             </a>
+            <div id="home"></div>
             
           </li>
-          <li class="hover_bright">
-            <a href="">
+          <li class="hover_bright sidebar_icons_container">
+            <a href="#search">
+              <div id="search"></div>
               <img src="./assets/media/img/search.svg" alt="" />
               <span class="hide">Cerca</span>
             </a>
           </li>
-          <li class="hover_bright">
-            <a href="">
+          <li class="hover_bright sidebar_icons_container">
+            <a href="#library">
+              <div id="library"></div>
               <img src="./assets/media/img/libreria.svg" alt="" />
               <span class="hide">La tua libreria</span>
             </a>
@@ -115,31 +118,39 @@
         <!-- BANNER END -->
         <div class="main_content">
           <div class="d-flex categories">
-            <div class="category_container">
-              <a class="hover_bright select_border" href="">in evidenza</a>
+            <div class="category_container" >
+              <a class="hover_bright" href="#evidenza">in evidenza</a>
+              <div id="evidenza"></div>
             </div>
             <div class="category_container">
-              <a class="hover_bright" href="">podcast</a>
+              <a class="hover_bright" href="#podcast">podcast</a>
+              <div id="podcast"></div>
             </div>
             <div class="category_container">
-              <a class="hover_bright" href="">classifiche</a>
+              <a class="hover_bright" href="#classifiche">classifiche</a>
+              <div id="classifiche"></div>
             </div>
             <div class="category_container">
-              <a class="hover_bright" href="">generi e mood</a>
+              <a class="hover_bright" href="#mood">generi e mood</a>
+              <div id="mood"></div>
             </div>
             <div class="category_container">
-              <a class="hover_bright" href="">nuove uscite</a>
+              <a class="hover_bright" href="#last">nuove uscite</a>
+              <div id="last"></div>
             </div>
             <div class="category_container">
-              <a class="hover_bright" href="">scopri</a>
+              <a class="hover_bright" href="#scopri">scopri</a>
+              <div id="scopri"></div>
             </div>
           </div>
+        <!-- CARDS START -->
           <section>
             <h1>Recently Played</h1>
             <div class="row">
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
+                    <div class="hover_play"><i class="fa-regular fa-circle-play"></i></div>
                     <img src="./assets/media/img/metal_lifting.jpg" alt="" />
                     <strong>Heavy Metal</strong>
                     <div class="subtitle">Subtitle</div>
@@ -147,9 +158,10 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/stranger.jpeg" alt="" />
+                    <div class="hover_play"><i class="fa-regular fa-circle-play"></i></div>
                     <strong
                       >Stranger Things, Vol.1 (a Netflix Original Series
                       Soundtrack)</strong
@@ -159,7 +171,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/aquietplace.jpeg" alt="" />
                     <strong>A quiet place</strong>
@@ -168,7 +180,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/split.jpeg" alt="" />
                     <strong>Split</strong>
@@ -177,7 +189,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/cure.jpeg" alt="" />
                     <strong>A cure for wellness</strong>
@@ -186,7 +198,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/sinister.jpeg" alt="" />
                     <strong>Sinister</strong>
@@ -201,7 +213,7 @@
             <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
             <div class="row">
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/radar.jpeg" alt="" />
                     <strong>Release Radar</strong>
@@ -209,7 +221,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/mixdaily.jpeg" alt="" />
                     <strong>Daily Mix 1</strong>
@@ -222,7 +234,7 @@
             <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
             <div class="row">
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/youg.jpeg" alt="" />
                     <strong>Young & Beautiful</strong>
@@ -231,7 +243,7 @@
                 </div>
               </div>
               <div class="col-6">
-                <div class="music_card d-flex">
+                <div class="music_card_container d-flex">
                   <a class="music_card d-flex" href="">
                     <img src="./assets/media/img/einaudi.jpeg" alt="" />
                     <strong>Einaudi</strong>
@@ -283,7 +295,7 @@
         </div>
         <div class="middle_bottom d-flex">
           <strong class="minute">0:25</strong>
-          <input class="minute_bar" type="range"/>
+          <div class="wrapper"><input class="minute_bar" type="range"/></div>
           <strong class="minute">4:35</strong>
         </div>
       </div>
@@ -291,7 +303,7 @@
         <a href=""><i class="fa-solid fa-list"></i></a>
         <a href=""><i class="fa-solid fa-display"></i></a>
         <a href=""><i class="fa-solid fa-volume-high"></i></a>
-        <input class="volume_bar" type="range"/>
+        <div class="wrapper"><input class="volume_bar" type="range"/></div>
       </div>
     </div>        
     </div>
